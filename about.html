@@ -1,41 +1,25 @@
 <!DOCTYPE html>
-<!-- DEV.140 · Milestone 1 / Homework 1 example: 3 linked pages, the same menu everywhere, semantic tags, headings in order. -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trevon Adams | About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Trevon Adams</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
+  <header><a class="brand" href="index.html"><h1>Trevon Adams</h1><p>Web Developer &amp; Designer</p></a></header>
+  <nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="about.html" aria-current="page">About &amp; Contact</a></li></ul></nav>
   <main>
-    <section>
-      <h2>About Me</h2>
-      <img src="images/me.png" alt="Trevon Adams smiling warmly in a portrait.">
-      <p>I grew up in the small town of Hammondsport, NY. I'm learning to build websites to showcase my work and connect with potential clients.</p>
-      <h3>My Skills</h3>
-      <ul>
-        <li>HTML</li>
-        <li>Semantic structure</li>
-        <li>Publishing with GitHub Pages</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contact</h2>
-      <p>Email: Trevonadams96@gmail.com</p>
-    </section>
+    <section class="hero about-hero"><div><p class="eyebrow">A little about me</p><h2>Curious by nature.<br />Building for the web.</h2><p>I’m Trevon, an IT student learning to turn ideas into useful, thoughtful digital experiences.</p></div><img src="images/profile%20picture.jpeg" alt="Portrait of Trevon Adams" /></section>
+    <div class="content-grid">
+      <section><p class="eyebrow">My story</p><h2>About me</h2><p>I grew up in Hammondsport, New York. I enjoy learning about new technology, playing video games, playing basketball, and working out. This is my first website project, and I’m excited to keep building my skills and share what I make.</p></section>
+      <section><p class="eyebrow">What I’m learning</p><h2>My skills</h2><ul class="skill-list"><li>HTML &amp; semantic structure</li><li>CSS &amp; responsive design</li><li>Publishing with GitHub Pages</li></ul></section>
+      <section class="contact-card"><p class="eyebrow">Say hello</p><h2>Contact</h2><p>Email: <a href="mailto:Trevonadams96@gmail.com">Trevonadams96@gmail.com</a></p><p><a href="https://github.com/tadams02" target="_blank" rel="noreferrer">GitHub profile ↗</a></p><p><a href="https://www.linkedin.com/in/trevon-adams-2967973bb" target="_blank" rel="noreferrer">LinkedIn profile ↗</a></p></section>
+    </div>
   </main>
-  <footer>
-    <p>&copy; 2026 Trevon Adams. All rights reserved.</p>
-  </footer>
+  <footer><p>&copy; 2026 Trevon Adams. All rights reserved.</p></footer>
 </body>
 </html>
